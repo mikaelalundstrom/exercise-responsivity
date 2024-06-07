@@ -1,0 +1,19 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+}
+
+main > * {
+    min-width: 0;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+}
+
+
+

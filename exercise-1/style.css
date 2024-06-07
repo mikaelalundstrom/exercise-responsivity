@@ -1,0 +1,43 @@
+/* STYLING */
+:root {
+    --color1: rgb(171, 160, 221);
+    --color2: rgb(201, 155, 201);
+    --color3: rgb(245, 178, 219);
+    --color4: rgb(221, 215, 160);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 1rem 0.5rem;
+    
+}
+
+header, .sidebar-one section, article, .sidebar-two, footer {
+    padding: 2rem 1rem;
+    border: 2px solid black;
+    margin: 0.5rem;
+}
+
+header {
+    background-color: var(--color1);
+ 
+}
+
+.sidebar-one section {
+    background-color: var(--color2);
+}
+
+.sidebar-two {
+    background-color: var(--color3);
+}
+
+footer {
+    background-color: var(--color4);
+   
+}
