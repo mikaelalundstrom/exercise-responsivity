@@ -1,0 +1,54 @@
+/* STYLING */
+:root {
+    --color1: rgb(171, 160, 221);
+    --color2: rgb(201, 155, 201);
+    --color3: rgb(245, 178, 219);
+    --color4: rgb(221, 215, 160);
+    --color5: rgb(229, 128, 175);
+
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    height: 100vh;
+    padding: 1rem;
+    margin: 0;
+    
+}
+
+body * {
+    min-width: 0;
+    overflow: hidden;
+}
+
+section, footer {
+    padding: 2rem 1rem;
+    border: 2px solid black;
+    
+}
+
+
+header .img {
+    background-color: var(--color1);
+}
+
+header nav section {
+    background-color: var(--color2);
+}
+
+article section {
+    background-color: var(--color3);
+}
+
+aside section {
+    background-color: var(--color5);
+}
+
+footer {
+    background-color: var(--color4);
+}
