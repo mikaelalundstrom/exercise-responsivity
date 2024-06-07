@@ -1,0 +1,30 @@
+body {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    gap: 1rem;
+    
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+}
