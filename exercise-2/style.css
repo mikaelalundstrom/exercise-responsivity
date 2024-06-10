@@ -14,9 +14,9 @@ body {
     font-family: Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.8rem;
-    height: 100vh;
     padding: 1rem;
     margin: 0;
+    min-height: 100vh;
     
 }
 
@@ -41,4 +41,39 @@ article {
 
 footer {
     background-color: var(--color4);
+}
+
+/*       ----        */
+
+body {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    gap: 1rem;
+    
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+}
+main > * {
+    flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    
 }
